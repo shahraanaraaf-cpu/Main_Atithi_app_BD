@@ -1,0 +1,115 @@
+{
+  "divisions": [
+    {
+      "name": "Barishal",
+      "districts": [
+        { "name": "Barguna", "lat": 22.15, "lng": 90.15 },
+        { "name": "Barishal", "lat": 22.70, "lng": 90.37 },
+        { "name": "Bhola", "lat": 22.68, "lng": 90.65 },
+        { "name": "Jhalokati", "lat": 22.95, "lng": 90.18 },
+        { "name": "Patuakhali", "lat": 22.36, "lng": 90.33 },
+        { "name": "Pirojpur", "lat": 22.55, "lng": 89.98 }
+      ]
+    },
+    {
+      "name": "Chattogram",
+      "districts": [
+        { "name": "Bandarban", "lat": 22.20, "lng": 92.22 },
+        { "name": "Brahmanbaria", "lat": 24.05, "lng": 91.12 },
+        { "name": "Chandpur", "lat": 23.25, "lng": 90.67 },
+        { "name": "Chattogram", "lat": 22.36, "lng": 91.82 },
+        { "name": "Cumilla", "lat": 23.46, "lng": 91.18 },
+        { "name": "Cox's Bazar", "lat": 21.43, "lng": 92.00 },
+        { "name": "Feni", "lat": 23.02, "lng": 91.40 },
+        { "name": "Khagrachhari", "lat": 23.12, "lng": 91.98 },
+        { "name": "Lakshmipur", "lat": 22.95, "lng": 90.83 },
+        { "name": "Noakhali", "lat": 22.87, "lng": 91.10 },
+        { "name": "Rangamati", "lat": 22.63, "lng": 92.18 }
+      ]
+    },
+    {
+      "name": "Dhaka",
+      "districts": [
+        { "name": "Dhaka", "lat": 23.81, "lng": 90.41 },
+        { "name": "Faridpur", "lat": 23.60, "lng": 89.83 },
+        { "name": "Gazipur", "lat": 24.00, "lng": 90.42 },
+        { "name": "Gopalganj", "lat": 23.02, "lng": 89.83 },
+        { "name": "Kishoreganj", "lat": 24.45, "lng": 90.78 },
+        { "name": "Madaripur", "lat": 23.17, "lng": 90.20 },
+        { "name": "Manikganj", "lat": 23.86, "lng": 89.93 },
+        { "name": "Munshiganj", "lat": 23.55, "lng": 90.53 },
+        { "name": "Narayanganj", "lat": 23.62, "lng": 90.50 },
+        { "name": "Narsingdi", "lat": 23.92, "lng": 90.72 },
+        { "name": "Rajbari", "lat": 23.77, "lng": 89.65 },
+        { "name": "Shariatpur", "lat": 23.53, "lng": 90.35 },
+        { "name": "Tangail", "lat": 24.25, "lng": 89.92 }
+      ]
+    },
+    {
+      "name": "Khulna",
+      "districts": [
+        { "name": "Bagerhat", "lat": 22.40, "lng": 89.78 },
+        { "name": "Chuadanga", "lat": 23.63, "lng": 88.85 },
+        { "name": "Jashore", "lat": 23.22, "lng": 89.40 },
+        { "name": "Jhenaidah", "lat": 23.53, "lng": 89.15 },
+        { "name": "Khulna", "lat": 22.82, "lng": 89.54 },
+        { "name": "Kushtia", "lat": 23.90, "lng": 89.12 },
+        { "name": "Magura", "lat": 23.48, "lng": 89.42 },
+        { "name": "Meherpur", "lat": 23.77, "lng": 88.65 },
+        { "name": "Narail", "lat": 23.17, "lng": 89.50 },
+        { "name": "Satkhira", "lat": 22.72, "lng": 89.07 }
+      ]
+    },
+    {
+      "name": "Mymensingh",
+      "districts": [
+        { "name": "Jamalpur", "lat": 24.95, "lng": 89.95 },
+        { "name": "Mymensingh", "lat": 24.75, "lng": 90.40 },
+        { "name": "Netrokona", "lat": 24.88, "lng": 90.73 },
+        { "name": "Sherpur", "lat": 25.02, "lng": 90.02 }
+      ]
+    },
+    {
+      "name": "Rajshahi",
+      "districts": [
+        { "name": "Bogura", "lat": 24.85, "lng": 89.38 },
+        { "name": "Chapainawabganj", "lat": 24.57, "lng": 88.33 },
+        { "name": "Joypurhat", "lat": 25.12, "lng": 89.03 },
+        { "name": "Naogaon", "lat": 24.82, "lng": 88.95 },
+        { "name": "Natore", "lat": 24.42, "lng": 88.98 },
+        { "name": "Pabna", "lat": 24.00, "lng": 89.25 },
+        { "name": "Rajshahi", "lat": 24.37, "lng": 88.58 },
+        { "name": "Sirajganj", "lat": 24.45, "lng": 89.70 }
+      ]
+    },
+    {
+      "name": "Rangpur",
+      "districts": [
+        { "name": "Dinajpur", "lat": 25.62, "lng": 88.65 },
+        { "name": "Gaibandha", "lat": 25.32, "lng": 89.53 },
+        { "name": "Kurigram", "lat": 25.80, "lng": 89.65 },
+        { "name": "Lalmonirhat", "lat": 25.98, "lng": 89.45 },
+        { "name": "Nilphamari", "lat": 25.93, "lng": 88.85 },
+        { "name": "Panchagarh", "lat": 26.32, "lng": 88.42 },
+        { "name": "Rangpur", "lat": 25.75, "lng": 89.25 },
+        { "name": "Thakurgaon", "lat": 26.03, "lng": 88.47 }
+      ]
+    },
+    {
+      "name": "Sylhet",
+      "districts": [
+        { "name": "Habiganj", "lat": 24.38, "lng": 91.42 },
+        { "name": "Moulvibazar", "lat": 24.48, "lng": 91.77 },
+        { "name": "Sunamganj", "lat": 24.92, "lng": 91.40 },
+        { "name": "Sylhet", "lat": 24.90, "lng": 91.88 }
+      ]
+    }
+  ],
+  "top_destinations": [
+    { "name": "Cox's Bazar", "district": "Cox's Bazar", "division": "Chattogram", "lat": 21.43, "lng": 92.00, "description": "World's longest sea beach" },
+    { "name": "Sylhet", "district": "Sylhet", "division": "Sylhet", "lat": 24.90, "lng": 91.88, "description": "Tea gardens & waterfalls" },
+    { "name": "Sajek Valley", "district": "Rangamati", "division": "Chattogram", "lat": 23.38, "lng": 92.30, "description": "The land of clouds" },
+    { "name": "Dhaka", "district": "Dhaka", "division": "Dhaka", "lat": 23.81, "lng": 90.41, "description": "Bustling heart of Bangladesh" },
+    { "name": "Gazipur", "district": "Gazipur", "division": "Dhaka", "lat": 24.00, "lng": 90.42, "description": "Industrial hub & attractions" }
+  ]
+}

@@ -1,0 +1,590 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atithi App BD - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#fffbff",
+                        "surface-tint": "#be0038",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#fefcfc",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "primary-fixed": "#ffdada",
+                        "outline-variant": "#e5bdbe",
+                        "primary-container": "#e21e4a",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-secondary-container": "#636262",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#920029",
+                        "tertiary-container": "#747474",
+                        "surface-bright": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-fixed-dim": "#ffb2b6",
+                        "secondary": "#5f5e5e",
+                        "surface-container": "#eeeeee",
+                        "on-surface-variant": "#5c3f41",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary-fixed": "#40000d",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "secondary-container": "#e2dfde",
+                        "tertiary": "#5c5c5c",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "inverse-surface": "#2f3131",
+                        "inverse-primary": "#ffb2b6",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#474746",
+                        "outline": "#906f70",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-fixed": "#e3e2e2",
+                        "primary": "#ba0036",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "grid-margin": "24px",
+                        "grid-gutter": "20px",
+                        "section-gap": "48px",
+                        "base": "8px",
+                        "container-max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "title-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "headline-sm": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "18px", "fontWeight": "600"}],
+                        "label-sm": ["10px", {"lineHeight": "12px", "fontWeight": "800"}],
+                        "title-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "display-md": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-md": ["26px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "title-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head><body class="bg-surface text-on-surface font-['Plus_Jakarta_Sans'] antialiased min-h-screen flex flex-col pb-20 md:pb-0">
+<div class="sticky top-0 w-full z-50 bg-white border-b border-zinc-200 shadow-sm flex flex-col">
+<header class="flex items-start justify-between px-6 md:px-20 pt-4 pb-6 w-full bg-white hidden md:flex relative">
+<div class="flex-shrink-0 flex items-center gap-2 cursor-pointer mt-2 z-10 w-[250px]">
+<span class="material-symbols-outlined text-[#FF385C] text-3xl" data-icon="air" style="font-variation-settings: 'FILL' 1;">air</span>
+<span class="text-2xl font-black text-[#FF385C] tracking-tighter">Atithi App BD</span>
+</div>
+<div class="flex flex-col items-center flex-1 px-8 z-0">
+<nav class="flex items-center gap-8 mb-6">
+<button class="flex items-center gap-2 text-zinc-950 font-medium pb-2 border-b-2 border-zinc-950">
+<span class="text-xl">🏠</span>
+<span>Stays</span>
+</button>
+<button class="flex items-center gap-2 text-zinc-500 font-medium hover:text-zinc-900 transition-colors pb-2 relative">
+<span class="text-xl">🎈</span>
+<span>Experiences</span>
+<span class="absolute -top-3 -right-6 bg-[#3b4c6b] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">NEW</span>
+</button>
+<button class="flex items-center gap-2 text-zinc-500 font-medium hover:text-zinc-900 transition-colors pb-2 relative">
+<span class="text-xl">🛎️</span>
+<span>Services</span>
+<span class="absolute -top-3 -right-6 bg-[#3b4c6b] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full">NEW</span>
+</button>
+</nav>
+<div class="flex items-center bg-white rounded-full shadow-[0_3px_12px_rgba(0,0,0,0.08)] border border-zinc-200 w-full max-w-[850px] divide-x divide-zinc-200">
+<button class="flex-[1.5] flex flex-col items-start px-8 py-3 hover:bg-zinc-100 rounded-full transition-colors group">
+<span class="text-[12px] text-zinc-900 font-bold">Where</span>
+<span class="text-sm text-zinc-500 group-hover:text-zinc-800 truncate w-full text-left">Search destinations</span>
+</button>
+<button class="flex-1 flex flex-col items-start px-8 py-3 hover:bg-zinc-100 rounded-full transition-colors group">
+<span class="text-[12px] text-zinc-900 font-bold">When</span>
+<span class="text-sm text-zinc-500 group-hover:text-zinc-800">Add dates</span>
+</button>
+<div class="flex-[1.5] flex items-center justify-between pl-8 pr-2 py-1.5 hover:bg-zinc-100 rounded-full transition-colors cursor-pointer group">
+<div class="flex flex-col items-start">
+<span class="text-[12px] text-zinc-900 font-bold">Who</span>
+<span class="text-sm text-zinc-500 group-hover:text-zinc-800">Add guests</span>
+</div>
+<button class="bg-[#FF385C] text-white h-12 w-12 rounded-full flex items-center justify-center hover:bg-[#E31C5F] transition-colors ml-4 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px] font-bold">search</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 flex-shrink-0 mt-2 w-[250px] z-10">
+<button class="font-title-md text-sm font-semibold text-zinc-800 hover:bg-zinc-100 rounded-full px-4 py-2 transition-all">
+                    Become a host
+                </button>
+<button class="h-10 w-10 bg-zinc-100 hover:bg-zinc-200 rounded-full transition-all flex items-center justify-center" title="English (BD)">
+<span class="material-symbols-outlined text-zinc-800 text-[20px]" data-icon="language">language</span>
+</button>
+<button class="h-10 w-10 bg-zinc-100 hover:bg-zinc-200 rounded-full transition-all flex items-center justify-center">
+<span class="material-symbols-outlined text-zinc-800 text-[20px]" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<div class="md:hidden flex items-center justify-center px-4 pt-4 pb-2 bg-white">
+<div class="flex items-center gap-3 bg-surface-container-lowest rounded-full shadow-md border border-outline-variant w-full p-2 px-4 cursor-pointer">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+<div class="flex flex-col">
+<span class="font-title-md text-label-md text-on-surface">Where to?</span>
+<span class="font-body-md text-label-sm text-on-surface-variant">Anywhere • Any week • Add guests</span>
+</div>
+</div>
+</div>
+</div>
+<main class="flex-1 w-full max-w-container-max-width mx-auto px-6 md:px-20 py-8 flex flex-col gap-12">
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between w-full"><h2 class="font-headline-md text-headline-md text-on-surface">Popular homes in Sylhet</h2><div class="flex items-center gap-2"><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_left</span></button><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_right</span></button></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Modern bright living room in Barcelona apartment with large windows, white sofa, terracotta accents, and soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdujVeShbhJzm8Vv4IUVf3Tz5th1mr_2m_joFGAPfIPTe4cL4ewd-F5JVp1yzniA_faWt21lhWhLdu2x3Jo7xSi93NSTui6RUC5LmGk9VL1bIocxWxmuCfj9jCRo9JpU6-bkeGBX3eA-xdP4zttWrlZ3uTsyd_6CzZv3OAZnveGeJo5wn7ha9_8_cq56LfsQnjs8yaz1_ezfBCduii-IpURcdWJZUSHzyRvZNyZbxzhFl5Lr7KDUsxm-YX6a9Rc-M_ETh6z0a6a_U"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Sylhet, Bangladesh</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.98</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Professional Host</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Oct 12 - 17</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳4,500</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Cozy minimalist bedroom with exposed brick wall, white linens, hanging plants, and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxA1jl7OumO-b6E95Cwqc4u_UYCVJCZ82bL5WgJAKiyv3hV1AYQ7k0vLq1CMLFmFEeN3M1F-HBitW4LFLrMDXkBb_Qe8AILGhmdeMs2qJNilBypeJuo_4WfADJSEup9ApEuFoViHo7FW10jrXUq6TqFf1V3rg7YXkWdVHbmHxKKAXkC-s2PHKZWbYXJJdjIojONmAPe1UMost4binYtHEkbnzL31M88MddZSffC9strN-61wxytFo_X-QXEz7_u1v2S3MoMfUUTOE"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Malnicherra Tea Estate</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.85</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Superhost</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Nov 2 - 7</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳3,200</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden md:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Sunny terrace balcony overlooking Barcelona city skyline with wrought iron railings and potted Mediterranean plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHgC0tC5o230_Zk1ngKuWH0XqLn6hxQaxXGsqAt8HdChgBDmM7EhW67W1muYg9B9Y8lC9jj-etWRpKepoofi_C_dm-sQNqLLhOFQELxwU2wQ-UKpWETSqJ1Cx8P77mTAeHicUhou-1WVgl02xB6O8befdS5Z_FIHS5-cqbUv7eFhoCzxTyhFOawS_aQ9PZYe8_fTHZ4PBC6wAle_uz2Vo8pGZ41aHkb1PXQUXs2PxzRmACvEMaMBHQ2FsRqxYMWGmf1Ty0WKGL4Kc"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Ratargul Swamp Forest</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.99</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Hosted by Maria</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Dec 10 - 15</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳5,100</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden lg:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Sleek modern kitchen and dining area with marble island, dark wood cabinets, and minimalist pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7P3aCR2m_tdUxVvFFbBs4v0LS1MdDFgEwM7Plkp7_pV5BKSy0ZTrdu0kNk37AAk2wHSQSBb5BQwLV_oP9TTZFuNQ0RCsOre-JqDewG2mU4u_scJcVivJwZ7YbWl2vN7kfcWVQ5Oo8aI24T2gmOLyKRKPWJ4JPeETMgMi5PAYcuINhEfeI8isqBSy7v5xQYJBT6s3u6S03PnU4vEdb0zSyeld0oA3ZoYxvhRfbmEXLD_UyHqumdjIC_9GeJw6S8_IiT-07CMkZvM"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined text-[#FF385C]" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Jaflong, Sylhet</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.72</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Professional Host</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Jan 5 - 12</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳4,800</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between w-full"><h2 class="font-headline-md text-headline-md text-on-surface">Featured hotels in Sylhet</h2><div class="flex items-center gap-2"><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_left</span></button><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_right</span></button></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Traditional English stone cottage in Cotswolds with thatched roof, climbing roses, and a lush green front garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhk2Uwt5b3mxHFgBR6KhW6pQgvMH27GG1_fYAxlVoXd6zQhGIeYKEPI5vglKl5zf16MedEzLLM2ylDVG99FFF_GGUiTG9LwsXAwJ_0VVZ6zPclca0mXM1fFNQQA_obb3IjZg9DL6t7qYSnn7gV7hP9n2xyAL_cIytK9DXZ3k6lmWhZwElal4p__26YjXk8KfEPvD67qeeNHNUF_WSWiLaXhbK6Olk3clBzbCTLNevf1NvaCYEt5QlaBxsvqWW2y5Vevrp0ty78QFE"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Grand Sylhet Hotel</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">5.0</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Luxury Stay</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Sep 14 - 19</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳12,000</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Interior of rustic cabin with large stone fireplace, cozy leather armchairs, exposed wooden beams, and warm firelight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCOPQqWJ76W3Xlb8bDOKabalE4o-OONjgejK118MAFK8omupXm_42S98AUeJ-W1hBe9IAcvkfoYVYK802nTu0GZ206H9lmTtXv75kHd-yw_uTpsiLWpfoRZdmJAhtvtYvglBeBO6t6aOORfjjAb_IlZ6VW7N7hx4eT_vCmP5ZPuy3A1zu7XMStp0Fea37nKsdD2HeRkMyrkLaV0MLy0p3HabMcPZuRcdXJnPcy6SVSpnRxKT0V6vMvNGwwmqrIGEOkvzAYIgYqB_4"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined text-[#FF385C]" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Rose View Hotel</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.92</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Premium Suite</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Oct 1 - 6</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳8,500</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden md:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Elegant country manor house surrounded by manicured lawns and ancient oak trees under a partly cloudy sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANrZN__CRq5PcGKyXsld1-lCwd7r_IgkVwcWm5jO8pB6nc2ZmzyPG30Z5zg-_37WnA4MHGkzdyBu7mSE1D1uhgQCleRaPH6Qull_SxFloJEpk5X1Iyv7Qv8dDpDb0E4XodWhvweM9G7JLaL-7bhF_Ei6nGPhnyhzMCq2nTPtkG3ZaBRTNa4oOrM5FXCYBH0exoCviubCG4-G9fdltz8geYXYmERNYQOCnHIyIcCN56npd12E-9w9RF9UP2iPzinv0MqUqIKwUgFXE"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">The Peninsula Chittagong</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.88</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Executive Room</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Nov 15 - 20</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳15,000</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden lg:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Bright sunroom with large glass windows overlooking rolling green hills, furnished with comfortable wicker chairs and soft throws" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTpf5t0gZmNPJKEdjWgK4Tf44Qc6fOnUD3nyquJ3HEsseccdt_ysoVYmqReeUSxZbgOSWXjPdlXi4aoEs3cZ8wnOAG7NRfL_5ALKg-uPYXsXIj8dKSCwkAefMRySP9dPg1V0PLwWtFOj33Z30FEciZfwoI95qt8oBp9mSSpl9YM_3DTbsKFyBNtdb45EMzz6dkmg9zrgV-yUmSvxh8tSe3aeYZUMD6lBtj-cxdkRzYGijcDI1NMkgaIms_PnrvJwNcZMnHB4194oM"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Nirvana Inn</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.96</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Boutique Hotel</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Dec 22 - 27</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳9,500</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between w-full"><h2 class="font-headline-md text-headline-md text-on-surface">Stay in Chittagong</h2><div class="flex items-center gap-2"><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_left</span></button><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_right</span></button></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Modern bright living room in Barcelona apartment with large windows, white sofa, terracotta accents, and soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdujVeShbhJzm8Vv4IUVf3Tz5th1mr_2m_joFGAPfIPTe4cL4ewd-F5JVp1yzniA_faWt21lhWhLdu2x3Jo7xSi93NSTui6RUC5LmGk9VL1bIocxWxmuCfj9jCRo9JpU6-bkeGBX3eA-xdP4zttWrlZ3uTsyd_6CzZv3OAZnveGeJo5wn7ha9_8_cq56LfsQnjs8yaz1_ezfBCduii-IpURcdWJZUSHzyRvZNyZbxzhFl5Lr7KDUsxm-YX6a9Rc-M_ETh6z0a6a_U"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">GEC Circle Loft</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.98</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Professional Host</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Oct 12 - 17</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳4,500</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Cozy minimalist bedroom with exposed brick wall, white linens, hanging plants, and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxA1jl7OumO-b6E95Cwqc4u_UYCVJCZ82bL5WgJAKiyv3hV1AYQ7k0vLq1CMLFmFEeN3M1F-HBitW4LFLrMDXkBb_Qe8AILGhmdeMs2qJNilBypeJuo_4WfADJSEup9ApEuFoViHo7FW10jrXUq6TqFf1V3rg7YXkWdVHbmHxKKAXkC-s2PHKZWbYXJJdjIojONmAPe1UMost4binYtHEkbnzL31M88MddZSffC9strN-61wxytFo_X-QXEz7_u1v2S3MoMfUUTOE"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Agrabad City Apartment</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.85</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Superhost</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Nov 2 - 7</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳3,200</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden md:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Sunny terrace balcony overlooking Barcelona city skyline with wrought iron railings and potted Mediterranean plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHgC0tC5o230_Zk1ngKuWH0XqLn6hxQaxXGsqAt8HdChgBDmM7EhW67W1muYg9B9Y8lC9jj-etWRpKepoofi_C_dm-sQNqLLhOFQELxwU2wQ-UKpWETSqJ1Cx8P77mTAeHicUhou-1WVgl02xB6O8befdS5Z_FIHS5-cqbUv7eFhoCzxTyhFOawS_aQ9PZYe8_fTHZ4PBC6wAle_uz2Vo8pGZ41aHkb1PXQUXs2PxzRmACvEMaMBHQ2FsRqxYMWGmf1Ty0WKGL4Kc"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Khulshi Skyline View</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.99</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Hosted by Maria</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Dec 10 - 15</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳5,100</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer hidden lg:flex">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Sleek modern kitchen and dining area with marble island, dark wood cabinets, and minimalist pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7P3aCR2m_tdUxVvFFbBs4v0LS1MdDFgEwM7Plkp7_pV5BKSy0ZTrdu0kNk37AAk2wHSQSBb5BQwLV_oP9TTZFuNQ0RCsOre-JqDewG2mU4u_scJcVivJwZ7YbWl2vN7kfcWVQ5Oo8aI24T2gmOLyKRKPWJ4JPeETMgMi5PAYcuINhEfeI8isqBSy7v5xQYJBT6s3u6S03PnU4vEdb0zSyeld0oA3ZoYxvhRfbmEXLD_UyHqumdjIC_9GeJw6S8_IiT-07CMkZvM"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined text-[#FF385C]" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Nasirabad Penthouse</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">4.72</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Professional Host</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Jan 5 - 12</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳4,800</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between w-full"><h2 class="font-headline-md text-headline-md text-on-surface">Stay in Cox's Bazar</h2><div class="flex items-center gap-2"><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_left</span></button><button class="h-8 w-8 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-sm">chevron_right</span></button></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Traditional English stone cottage in Cotswolds with thatched roof, climbing roses, and a lush green front garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhk2Uwt5b3mxHFgBR6KhW6pQgvMH27GG1_fYAxlVoXd6zQhGIeYKEPI5vglKl5zf16MedEzLLM2ylDVG99FFF_GGUiTG9LwsXAwJ_0VVZ6zPclca0mXM1fFNQQA_obb3IjZg9DL6t7qYSnn7gV7hP9n2xyAL_cIytK9DXZ3k6lmWhZwElal4p__26YjXk8KfEPvD67qeeNHNUF_WSWiLaXhbK6Olk3clBzbCTLNevf1NvaCYEt5QlaBxsvqWW2y5Vevrp0ty78QFE"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Guest favourite</span>
+</div>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Inani Beach, Cox's Bazar</h3>
+<div class="flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-surface" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface">5.0</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Hosted by Rahim</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Sep 14 - 19</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">৳12,000</span>
+<span class="font-body-md text-body-md text-on-surface">night</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-surface-variant">
+<img alt="" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Interior of rustic cabin with large stone fireplace, cozy leather armchairs, exposed wooden beams, and warm firelight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCOPQqWJ76W3Xlb8bDOKabalE4o-OONjgejK118MAFK8omupXm_42S98AUeJ-W1hBe9IAcvkfoYVYK802nTu0GZ206H9lmTtXv75kHd-yw_uTpsiLWpfoRZdmJAhtvtYvglBeBO6t6aOORfjjAb_IlZ6VW7N7hx4eT_vCmP5ZPuy3A1zu7XMStp0Fea37nKsdD2HeRkMyrkLaV0MLy0p3HabMcPZuRcdXJnPcy6SVSpnRxKT0V6vMvNGwwmqrIGEOkvzAYIgYqB_4"/>
+<button class="absolute top-3 right-3 text-white hover:scale-110 transition-transform drop-shadow-md">
+</button></div></div></div></section></main>
+<footer class="bg-surface-container-lowest border-t border-zinc-200 mt-12">
+<div class="max-w-container-max-width mx-auto px-6 md:px-20 py-12">
+<section class="mb-12">
+<h2 class="font-headline-sm text-zinc-950 mb-4">Inspiration for future getaways</h2>
+<div class="flex items-center gap-6 border-b border-zinc-200 mb-8 overflow-x-auto no-scrollbar"><button class="text-zinc-950 font-semibold pb-4 border-b-2 border-zinc-950 whitespace-nowrap">Popular</button>
+<button class="text-zinc-500 font-semibold pb-4 hover:text-zinc-700 whitespace-nowrap transition-colors">Coastal</button>
+<button class="text-zinc-500 font-semibold pb-4 hover:text-zinc-700 whitespace-nowrap transition-colors">Historic</button>
+<button class="text-zinc-500 font-semibold pb-4 hover:text-zinc-700 whitespace-nowrap transition-colors">Hills</button>
+<button class="text-zinc-500 font-semibold pb-4 hover:text-zinc-700 whitespace-nowrap transition-colors">Rivers</button></div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-6 gap-x-4"><div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Srimangal</span>
+<span class="text-sm text-zinc-500">Tea Gardens</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Bandarban</span>
+<span class="text-sm text-zinc-500">Hill Tracts</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Kuakata</span>
+<span class="text-sm text-zinc-500">Sea View</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Bagerhat</span>
+<span class="text-sm text-zinc-500">Historic Site</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Sundarbans</span>
+<span class="text-sm text-zinc-500">Mangrove Forest</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Rangamati</span>
+<span class="text-sm text-zinc-500">Lake &amp; Hills</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Cox's Bazar</span>
+<span class="text-sm text-zinc-500">Longest Beach</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Saint Martin</span>
+<span class="text-sm text-zinc-500">Coral Island</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Sajek Valley</span>
+<span class="text-sm text-zinc-500">Cloud Watching</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Puthia</span>
+<span class="text-sm text-zinc-500">Temple City</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Sylhet</span>
+<span class="text-sm text-zinc-500">Shrines &amp; Nature</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Barisal</span>
+<span class="text-sm text-zinc-500">Backwaters</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Mahasthangarh</span>
+<span class="text-sm text-zinc-500">Ancient City</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-zinc-900">Tanguar Haor</span>
+<span class="text-sm text-zinc-500">Wetland Ecosystem</span>
+</div></div></section></div></footer></body></html>
