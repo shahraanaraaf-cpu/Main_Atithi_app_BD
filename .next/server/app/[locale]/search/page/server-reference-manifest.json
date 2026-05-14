@@ -1,0 +1,17 @@
+{
+  "node": {
+    "40e7cf94882e22bedd9b5e553ab51b83a1da970449": {
+      "workers": {
+        "app/[locale]/search/page": {
+          "moduleId": 76121,
+          "async": false,
+          "exportedName": "searchListings",
+          "filename": "app/actions/listings.ts"
+        }
+      },
+      "exportedName": "searchListings",
+      "filename": "app/actions/listings.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,133 @@
+{
+  "app": {
+    "[project]/app/[locale]/checkout/payment/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/checkout/success/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/bookings/[id]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/bookings/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/overview/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/preferences/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/guest/settings/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/host/overview/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/host/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/dashboard/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/debug-auth/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/[id]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/category/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/chittagong/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/coxs-bazar/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/dhaka/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/khulna/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/rajshahi/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/experiences/sylhet/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/help/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/host/onboarding/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/login/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/messages/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/otp/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/privacy/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/[id]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/bandarban/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/category/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/coxs-bazar/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/dhaka/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/rooms/sylhet/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/s/[slug]/homes/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/search/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/services/[id]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/services/category/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/services/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/signup/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/terms/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ],
+    "[project]/app/[locale]/verify-nid/page": [
+      "static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

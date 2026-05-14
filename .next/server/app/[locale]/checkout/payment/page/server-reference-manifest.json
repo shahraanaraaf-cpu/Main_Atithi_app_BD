@@ -1,0 +1,17 @@
+{
+  "node": {
+    "60760d0068964e61dbc44838a35a68d49befc6dca4": {
+      "workers": {
+        "app/[locale]/checkout/payment/page": {
+          "moduleId": 19812,
+          "async": false,
+          "exportedName": "handleIPN",
+          "filename": "app/actions/payment.ts"
+        }
+      },
+      "exportedName": "handleIPN",
+      "filename": "app/actions/payment.ts"
+    }
+  },
+  "edge": {}
+}

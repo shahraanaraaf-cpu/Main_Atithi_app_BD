@@ -11,7 +11,7 @@ export default async function GuestBookingsPage({
 }) {
   const { locale } = await params
   const raw = await getGuestBookings()
-  const bookings = (raw || []).map((row) => toGuestBookingVM(row as Record<string, unknown>))
+  const bookings = (raw || []).map((row: any) => toGuestBookingVM(row as Record<string, unknown>))
   const fallbackImage = 'https://picsum.photos/seed/trip/800/500'
 
   return (
@@ -51,7 +51,7 @@ export default async function GuestBookingsPage({
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {bookings.map((booking) => (
+            {bookings.map((booking: any) => (
               <div
                 key={booking.id}
                 className="bg-white rounded-2xl shadow-sm border border-zinc-200 overflow-hidden group flex flex-col"

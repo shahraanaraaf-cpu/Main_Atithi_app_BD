@@ -1,0 +1,65 @@
+{
+  "node": {
+    "00719d820e4c40800361138bb9fbb095e09e00a170": {
+      "workers": {
+        "app/[locale]/dashboard/guest/bookings/page": {
+          "moduleId": 97586,
+          "async": false,
+          "exportedName": "getHostBookings",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "getHostBookings",
+      "filename": "app/actions/booking.ts"
+    },
+    "00d68a2cf619881b5509bec21e51bbd306e3f0d541": {
+      "workers": {
+        "app/[locale]/dashboard/guest/bookings/page": {
+          "moduleId": 97586,
+          "async": false,
+          "exportedName": "getGuestBookings",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "getGuestBookings",
+      "filename": "app/actions/booking.ts"
+    },
+    "406a0fe51a357856f9873840d2de38bcc9e964d49f": {
+      "workers": {
+        "app/[locale]/dashboard/guest/bookings/page": {
+          "moduleId": 97586,
+          "async": false,
+          "exportedName": "toggleWishlist",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "toggleWishlist",
+      "filename": "app/actions/booking.ts"
+    },
+    "409e75f8945138f7a8ba5b3e4d19e3bde8d54c671b": {
+      "workers": {
+        "app/[locale]/dashboard/guest/bookings/page": {
+          "moduleId": 97586,
+          "async": false,
+          "exportedName": "getGuestBookingById",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "getGuestBookingById",
+      "filename": "app/actions/booking.ts"
+    },
+    "7e328302c4c305f4e871a08c5a13c6fd10b341394a": {
+      "workers": {
+        "app/[locale]/dashboard/guest/bookings/page": {
+          "moduleId": 97586,
+          "async": false,
+          "exportedName": "createBooking",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "createBooking",
+      "filename": "app/actions/booking.ts"
+    }
+  },
+  "edge": {}
+}

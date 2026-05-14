@@ -1,0 +1,29 @@
+{
+  "node": {
+    "40de82352c4875f8cfbf19802e00c74ced2b862aee": {
+      "workers": {
+        "app/[locale]/otp/page": {
+          "moduleId": 44168,
+          "async": false,
+          "exportedName": "sendOTP",
+          "filename": "app/actions/otp.ts"
+        }
+      },
+      "exportedName": "sendOTP",
+      "filename": "app/actions/otp.ts"
+    },
+    "608e28860bfc0e296ae7e1d43ab8d37694214ed9df": {
+      "workers": {
+        "app/[locale]/otp/page": {
+          "moduleId": 44168,
+          "async": false,
+          "exportedName": "verifyOTP",
+          "filename": "app/actions/otp.ts"
+        }
+      },
+      "exportedName": "verifyOTP",
+      "filename": "app/actions/otp.ts"
+    }
+  },
+  "edge": {}
+}

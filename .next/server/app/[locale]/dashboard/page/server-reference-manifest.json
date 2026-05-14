@@ -1,0 +1,17 @@
+{
+  "node": {
+    "00719d820e4c40800361138bb9fbb095e09e00a170": {
+      "workers": {
+        "app/[locale]/dashboard/page": {
+          "moduleId": 40949,
+          "async": false,
+          "exportedName": "getHostBookings",
+          "filename": "app/actions/booking.ts"
+        }
+      },
+      "exportedName": "getHostBookings",
+      "filename": "app/actions/booking.ts"
+    }
+  },
+  "edge": {}
+}
